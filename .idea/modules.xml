@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/buoi1/buoi1.iml" filepath="$PROJECT_DIR$/buoi1/buoi1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai4/bai4.iml" filepath="$PROJECT_DIR$/bai4/bai4.iml" />
       <module fileurl="file://$PROJECT_DIR$/codegym.iml" filepath="$PROJECT_DIR$/codegym.iml" />
-      <module fileurl="file://$PROJECT_DIR$/buoi1/kieudulieu/kieudulieu.iml" filepath="$PROJECT_DIR$/buoi1/kieudulieu/kieudulieu.iml" />
     </modules>
   </component>
 </project>
