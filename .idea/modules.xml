@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bai4/bai4.iml" filepath="$PROJECT_DIR$/bai4/bai4.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai5/bai5.iml" filepath="$PROJECT_DIR$/bai5/bai5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai6/bai6.iml" filepath="$PROJECT_DIR$/bai6/bai6.iml" />
       <module fileurl="file://$PROJECT_DIR$/codegym.iml" filepath="$PROJECT_DIR$/codegym.iml" />
     </modules>
   </component>
