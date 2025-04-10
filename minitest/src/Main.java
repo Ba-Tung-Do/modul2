@@ -40,7 +40,7 @@ public class Main {
         System.out.println("So sinh vien dat (grade > 5): " + countPass);
 
         for (Student s : students) {
-            if (s.fullname.equalsIgnoreCase("Nguyen Van A")) {
+            if (s.fullname.equals("Nguyen Van A")) {
                 System.out.println("Email Nguyen Van A: " + s.email);
                 break;
             }
