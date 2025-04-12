@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/codegym.iml" filepath="$PROJECT_DIR$/codegym.iml" />
       <module fileurl="file://$PROJECT_DIR$/minitest/minitest.iml" filepath="$PROJECT_DIR$/minitest/minitest.iml" />
       <module fileurl="file://$PROJECT_DIR$/minitest2/minitest2.iml" filepath="$PROJECT_DIR$/minitest2/minitest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh1/thuchanh1.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh1/thuchanh1.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh2/thuchanh2.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh2/thuchanh2.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh3/thuchanh3.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh3/thuchanh3.iml" />
@@ -27,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/array/thuchanhmang3/thuchanhmang3.iml" filepath="$PROJECT_DIR$/array/thuchanhmang3/thuchanhmang3.iml" />
       <module fileurl="file://$PROJECT_DIR$/array/thuchanhmang4/thuchanhmang4.iml" filepath="$PROJECT_DIR$/array/thuchanhmang4/thuchanhmang4.iml" />
       <module fileurl="file://$PROJECT_DIR$/array/thuchanhmang5/thuchanhmang5.iml" filepath="$PROJECT_DIR$/array/thuchanhmang5/thuchanhmang5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop/thuhanhoop1/thuhanhoop1.iml" filepath="$PROJECT_DIR$/oop/thuhanhoop1/thuhanhoop1.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/vonglap.iml" filepath="$PROJECT_DIR$/vonglap/vonglap.iml" />
       <module fileurl="file://$PROJECT_DIR$/work1/work1.iml" filepath="$PROJECT_DIR$/work1/work1.iml" />
       <module fileurl="file://$PROJECT_DIR$/work2/work2.iml" filepath="$PROJECT_DIR$/work2/work2.iml" />
