@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/abstract/abstract.iml" filepath="$PROJECT_DIR$/abstract/abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abstract/abstractminitest4/abstractminitest4.iml" filepath="$PROJECT_DIR$/abstract/abstractminitest4/abstractminitest4.iml" />
       <module fileurl="file://$PROJECT_DIR$/access/access.iml" filepath="$PROJECT_DIR$/access/access.iml" />
       <module fileurl="file://$PROJECT_DIR$/array/array.iml" filepath="$PROJECT_DIR$/array/array.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai4/bai4.iml" filepath="$PROJECT_DIR$/bai4/bai4.iml" />
