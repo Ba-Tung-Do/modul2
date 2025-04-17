@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class CrispyFlour extends Material {
+public class CrispyFlour extends Material implements Discount {
     private int quantity;
 
     public CrispyFlour(String id, String name, LocalDate manufacturingDate, int cost, int quantity) {
@@ -23,8 +23,8 @@ public class CrispyFlour extends Material {
         long daysLeft = getExpiryDate().toEpochDay() - LocalDate.now().toEpochDay();
         double amount = getAmount();
 
-        if (daysLeft <= 60) return amount * 0.6;
-        else if (daysLeft <= 120) return amount * 0.8;
+        if (daysLeft <= 60) return amount * 0.6; // còn ≤ 2 tháng
+        else if (daysLeft <= 120) return amount * 0.8; // còn ≤ 4 tháng
         else return amount * 0.95;
     }
 }
