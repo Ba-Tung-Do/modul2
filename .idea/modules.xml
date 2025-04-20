@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai10/bai10.iml" filepath="$PROJECT_DIR$/bai10/bai10.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai10/bai10thuchanh/bai10thuchanh.iml" filepath="$PROJECT_DIR$/bai10/bai10thuchanh/bai10thuchanh.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai10/bai10thuchanh2/bai10thuchanh2.iml" filepath="$PROJECT_DIR$/bai10/bai10thuchanh2/bai10thuchanh2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai11/bai11.iml" filepath="$PROJECT_DIR$/bai11/bai11.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai4/bai4.iml" filepath="$PROJECT_DIR$/bai4/bai4.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai5/bai5.iml" filepath="$PROJECT_DIR$/bai5/bai5.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai6/bai6.iml" filepath="$PROJECT_DIR$/bai6/bai6.iml" />
@@ -50,6 +51,7 @@
       <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/testcode/testcode.iml" filepath="$PROJECT_DIR$/testcode/testcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh1/thuchanh1.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh1/thuchanh1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai11/thuchanh1bai11/thuchanh1bai11.iml" filepath="$PROJECT_DIR$/bai11/thuchanh1bai11/thuchanh1bai11.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh2/thuchanh2.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh2/thuchanh2.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh3/thuchanh3.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh3/thuchanh3.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh4/thuchanh4.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh4/thuchanh4.iml" />
