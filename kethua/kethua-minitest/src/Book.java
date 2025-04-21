@@ -8,7 +8,7 @@ public class Book {
         this.author = author;
         this.price = price;
     }
-    public double getPrice() {
+    public double getBookCode() {
         return price;
     }
 
