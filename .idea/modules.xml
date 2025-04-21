@@ -27,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai11/baitap2bai11/baitap2bai11.iml" filepath="$PROJECT_DIR$/bai11/baitap2bai11/baitap2bai11.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/baitap3/baitap3.iml" filepath="$PROJECT_DIR$/vonglap/baitap3/baitap3.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai9Automate/baitap3Automate/baitap3Automate.iml" filepath="$PROJECT_DIR$/bai9Automate/baitap3Automate/baitap3Automate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai11/baitap3bai11/baitap3bai11.iml" filepath="$PROJECT_DIR$/bai11/baitap3bai11/baitap3bai11.iml" />
       <module fileurl="file://$PROJECT_DIR$/abstract/baitapabstract1/baitapabstract1.iml" filepath="$PROJECT_DIR$/abstract/baitapabstract1/baitapabstract1.iml" />
       <module fileurl="file://$PROJECT_DIR$/abstract/baitapabstract2/baitapabstract2.iml" filepath="$PROJECT_DIR$/abstract/baitapabstract2/baitapabstract2.iml" />
       <module fileurl="file://$PROJECT_DIR$/access/baitapaccess1/baitapaccess1.iml" filepath="$PROJECT_DIR$/access/baitapaccess1/baitapaccess1.iml" />
@@ -47,10 +48,12 @@
       <module fileurl="file://$PROJECT_DIR$/kethua/kethua.iml" filepath="$PROJECT_DIR$/kethua/kethua.iml" />
       <module fileurl="file://$PROJECT_DIR$/kethua/kethua-minitest/kethua-minitest.iml" filepath="$PROJECT_DIR$/kethua/kethua-minitest/kethua-minitest.iml" />
       <module fileurl="file://$PROJECT_DIR$/kethua/kethuathuchanh1/kethuathuchanh1.iml" filepath="$PROJECT_DIR$/kethua/kethuathuchanh1/kethuathuchanh1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kethuavadahinh/kethuavadahinh.iml" filepath="$PROJECT_DIR$/kethuavadahinh/kethuavadahinh.iml" />
       <module fileurl="file://$PROJECT_DIR$/minitest/minitest.iml" filepath="$PROJECT_DIR$/minitest/minitest.iml" />
       <module fileurl="file://$PROJECT_DIR$/minitest2/minitest2.iml" filepath="$PROJECT_DIR$/minitest2/minitest2.iml" />
       <module fileurl="file://$PROJECT_DIR$/minitest6/minitest6.iml" filepath="$PROJECT_DIR$/minitest6/minitest6.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/static/static.iml" filepath="$PROJECT_DIR$/static/static.iml" />
       <module fileurl="file://$PROJECT_DIR$/testcode/testcode.iml" filepath="$PROJECT_DIR$/testcode/testcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh1/thuchanh1.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh1/thuchanh1.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai11/thuchanh1bai11/thuchanh1bai11.iml" filepath="$PROJECT_DIR$/bai11/thuchanh1bai11/thuchanh1bai11.iml" />
