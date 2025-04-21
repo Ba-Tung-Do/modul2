@@ -4,13 +4,17 @@ public class Queue {
     private Node  front;
     private Node  rear;
 
+    public Queue() {
+        front = null;
+        rear = null;
+    }
     public Queue(Node front, Node rear) {
         this.front = front;
         this.rear = rear;
     }
 
     public void enqueue(int data) { // them vao cuoi hang doi
-        Node newNode = new Node(data);
+        Node newNode = new Node(data, null);
 
         if (front == null) {
             front = newNode; // front va rear deu chi vao node moi
@@ -50,7 +54,7 @@ public class Queue {
         do {
             System.out.println(temp.data +" ");
             temp = temp.next;
-        } while (temp = ! front);
+        } while (temp != front);
         System.out.println();
     }
 }
