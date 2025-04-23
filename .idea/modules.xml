@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai11/bai11.iml" filepath="$PROJECT_DIR$/bai11/bai11.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai12/bai12.iml" filepath="$PROJECT_DIR$/bai12/bai12.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai13/bai13.iml" filepath="$PROJECT_DIR$/bai13/bai13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai14/bai14.iml" filepath="$PROJECT_DIR$/bai14/bai14.iml" />
       <module fileurl="file://$PROJECT_DIR$/kethuavadahinh/bai2kethuavadahinh/bai2kethuavadahinh.iml" filepath="$PROJECT_DIR$/kethuavadahinh/bai2kethuavadahinh/bai2kethuavadahinh.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai4/bai4.iml" filepath="$PROJECT_DIR$/bai4/bai4.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai5/bai5.iml" filepath="$PROJECT_DIR$/bai5/bai5.iml" />
@@ -58,6 +59,9 @@
       <module fileurl="file://$PROJECT_DIR$/minitest6/minitest6.iml" filepath="$PROJECT_DIR$/minitest6/minitest6.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/static/static.iml" filepath="$PROJECT_DIR$/static/static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai14/sxChen/sxChen.iml" filepath="$PROJECT_DIR$/bai14/sxChen/sxChen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai14/sxChon/sxChon.iml" filepath="$PROJECT_DIR$/bai14/sxChon/sxChon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai14/demo/sxNoiBot/sxNoiBot.iml" filepath="$PROJECT_DIR$/bai14/demo/sxNoiBot/sxNoiBot.iml" />
       <module fileurl="file://$PROJECT_DIR$/test6/test6.iml" filepath="$PROJECT_DIR$/test6/test6.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai12/testbai12/testbai12.iml" filepath="$PROJECT_DIR$/bai12/testbai12/testbai12.iml" />
       <module fileurl="file://$PROJECT_DIR$/testcode/testcode.iml" filepath="$PROJECT_DIR$/testcode/testcode.iml" />
@@ -70,6 +74,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai11/thuchanh2bai11/thuchanh2bai11.iml" filepath="$PROJECT_DIR$/bai11/thuchanh2bai11/thuchanh2bai11.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai12/thuchanh2bai12/thuchanh2bai12.iml" filepath="$PROJECT_DIR$/bai12/thuchanh2bai12/thuchanh2bai12.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh3/thuchanh3.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh3/thuchanh3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai12/thuchanh3bai12/thuchanh3bai12.iml" filepath="$PROJECT_DIR$/bai12/thuchanh3bai12/thuchanh3bai12.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh4/thuchanh4.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh4/thuchanh4.iml" />
       <module fileurl="file://$PROJECT_DIR$/abstract/thuchanhabstract1/thuchanhabstract1.iml" filepath="$PROJECT_DIR$/abstract/thuchanhabstract1/thuchanhabstract1.iml" />
       <module fileurl="file://$PROJECT_DIR$/access/thuchanhaccess1/thuchanhaccess1.iml" filepath="$PROJECT_DIR$/access/thuchanhaccess1/thuchanhaccess1.iml" />
@@ -88,6 +93,7 @@
       <module fileurl="file://$PROJECT_DIR$/work1/work1.iml" filepath="$PROJECT_DIR$/work1/work1.iml" />
       <module fileurl="file://$PROJECT_DIR$/work2/work2.iml" filepath="$PROJECT_DIR$/work2/work2.iml" />
       <module fileurl="file://$PROJECT_DIR$/work3/work3.iml" filepath="$PROJECT_DIR$/work3/work3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai14/xsNoiBot/xsNoiBot.iml" filepath="$PROJECT_DIR$/bai14/xsNoiBot/xsNoiBot.iml" />
     </modules>
   </component>
 </project>
