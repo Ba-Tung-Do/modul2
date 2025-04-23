@@ -20,11 +20,10 @@ public abstract class Vehicle implements Taxable, Comparable<Vehicle> {
     public int getYear() {
         return year;
     }
+    public abstract void displayInfo();// phuong thuc abstract không co phần thân
 
     @Override
     public int compareTo(Vehicle other) {
         return Integer.compare(this.year, other.year);
     }
-
-    public abstract void displayInfo();
 }

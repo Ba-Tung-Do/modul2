@@ -5,15 +5,11 @@ public class Motorbike extends Vehicle {
         super(id, brand, year);
         this.enginePower = enginePower;
     }
-
-
     @Override
-    public void displayInfor() {
-
+    public void displayInfo() {
     }
-
     @Override
-    public double caculateTax() {
+    public double calculateTax() {
         if (enginePower < 100) {
             return  500;
         } return 1000;

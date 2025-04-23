@@ -6,7 +6,7 @@ public class Car extends Vehicle {
         this.numberOfSeats = numberOfSeats;
     }
     @Override
-    public double calculateTax(){
+    public double calculateTax(){ // tính thué
         return numberOfSeats * 300;
     }
     @Override
