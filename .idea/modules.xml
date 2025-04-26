@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai13/bai13.iml" filepath="$PROJECT_DIR$/bai13/bai13.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai14/bai14.iml" filepath="$PROJECT_DIR$/bai14/bai14.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai15/bai15.iml" filepath="$PROJECT_DIR$/bai15/bai15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai16/bai16.iml" filepath="$PROJECT_DIR$/bai16/bai16.iml" />
       <module fileurl="file://$PROJECT_DIR$/kethuavadahinh/bai2kethuavadahinh/bai2kethuavadahinh.iml" filepath="$PROJECT_DIR$/kethuavadahinh/bai2kethuavadahinh/bai2kethuavadahinh.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai4/bai4.iml" filepath="$PROJECT_DIR$/bai4/bai4.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai5/bai5.iml" filepath="$PROJECT_DIR$/bai5/bai5.iml" />
@@ -33,6 +34,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai9Automate/baitap2Automate/baitap2Automate.iml" filepath="$PROJECT_DIR$/bai9Automate/baitap2Automate/baitap2Automate.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai10/baitap2bai10/baitap2bai10.iml" filepath="$PROJECT_DIR$/bai10/baitap2bai10/baitap2bai10.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai11/baitap2bai11/baitap2bai11.iml" filepath="$PROJECT_DIR$/bai11/baitap2bai11/baitap2bai11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai14/baitap2bai14/baitap2bai14.iml" filepath="$PROJECT_DIR$/bai14/baitap2bai14/baitap2bai14.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/baitap3/baitap3.iml" filepath="$PROJECT_DIR$/vonglap/baitap3/baitap3.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai9Automate/baitap3Automate/baitap3Automate.iml" filepath="$PROJECT_DIR$/bai9Automate/baitap3Automate/baitap3Automate.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai11/baitap3bai11/baitap3bai11.iml" filepath="$PROJECT_DIR$/bai11/baitap3bai11/baitap3bai11.iml" />
@@ -67,6 +69,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai14/demo/sxNoiBot/sxNoiBot.iml" filepath="$PROJECT_DIR$/bai14/demo/sxNoiBot/sxNoiBot.iml" />
       <module fileurl="file://$PROJECT_DIR$/test6/test6.iml" filepath="$PROJECT_DIR$/test6/test6.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai12/testbai12/testbai12.iml" filepath="$PROJECT_DIR$/bai12/testbai12/testbai12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai16/testbai16/testbai16.iml" filepath="$PROJECT_DIR$/bai16/testbai16/testbai16.iml" />
       <module fileurl="file://$PROJECT_DIR$/testcode/testcode.iml" filepath="$PROJECT_DIR$/testcode/testcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/testtruutuong/testtruutuong.iml" filepath="$PROJECT_DIR$/testtruutuong/testtruutuong.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh1/thuchanh1.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh1/thuchanh1.iml" />
@@ -75,6 +78,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai13/thuchanh1bai13/thuchanh1bai13.iml" filepath="$PROJECT_DIR$/bai13/thuchanh1bai13/thuchanh1bai13.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai14/thuchanh1bai14/thuchanh1bai14.iml" filepath="$PROJECT_DIR$/bai14/thuchanh1bai14/thuchanh1bai14.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai15/thuchanh1bai15/thuchanh1bai15.iml" filepath="$PROJECT_DIR$/bai15/thuchanh1bai15/thuchanh1bai15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai16/thuchanh1bai16/thuchanh1bai16.iml" filepath="$PROJECT_DIR$/bai16/thuchanh1bai16/thuchanh1bai16.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh2/thuchanh2.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh2/thuchanh2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai11/thuchanh2bai11/thuchanh2bai11.iml" filepath="$PROJECT_DIR$/bai11/thuchanh2bai11/thuchanh2bai11.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai12/thuchanh2bai12/thuchanh2bai12.iml" filepath="$PROJECT_DIR$/bai12/thuchanh2bai12/thuchanh2bai12.iml" />
