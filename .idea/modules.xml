@@ -67,6 +67,7 @@
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/baitaptulam.iml" filepath="$PROJECT_DIR$/baitaptulam/baitaptulam.iml" />
       <module fileurl="file://$PROJECT_DIR$/cleancode/cleancode.iml" filepath="$PROJECT_DIR$/cleancode/cleancode.iml" />
       <module fileurl="file://$PROJECT_DIR$/codegym.iml" filepath="$PROJECT_DIR$/codegym.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai19/dangkydangnhapbai19_regex_hashmap/dangkydangnhapbai19_regex_hashmap.iml" filepath="$PROJECT_DIR$/bai19/dangkydangnhapbai19_regex_hashmap/dangkydangnhapbai19_regex_hashmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/kethua/kethua.iml" filepath="$PROJECT_DIR$/kethua/kethua.iml" />
       <module fileurl="file://$PROJECT_DIR$/kethua/kethua-minitest/kethua-minitest.iml" filepath="$PROJECT_DIR$/kethua/kethua-minitest/kethua-minitest.iml" />
       <module fileurl="file://$PROJECT_DIR$/kethua/kethuathuchanh1/kethuathuchanh1.iml" filepath="$PROJECT_DIR$/kethua/kethuathuchanh1/kethuathuchanh1.iml" />
@@ -103,6 +104,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai12/thuchanh3bai12/thuchanh3bai12.iml" filepath="$PROJECT_DIR$/bai12/thuchanh3bai12/thuchanh3bai12.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai14/thuchanh3bai14/thuchanh3bai14.iml" filepath="$PROJECT_DIR$/bai14/thuchanh3bai14/thuchanh3bai14.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai15/thuchanh3bai15/thuchanh3bai15.iml" filepath="$PROJECT_DIR$/bai15/thuchanh3bai15/thuchanh3bai15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai19/thuchanh3bai19/thuchanh3bai19.iml" filepath="$PROJECT_DIR$/bai19/thuchanh3bai19/thuchanh3bai19.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh4/thuchanh4.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh4/thuchanh4.iml" />
       <module fileurl="file://$PROJECT_DIR$/abstract/thuchanhabstract1/thuchanhabstract1.iml" filepath="$PROJECT_DIR$/abstract/thuchanhabstract1/thuchanhabstract1.iml" />
       <module fileurl="file://$PROJECT_DIR$/access/thuchanhaccess1/thuchanhaccess1.iml" filepath="$PROJECT_DIR$/access/thuchanhaccess1/thuchanhaccess1.iml" />
