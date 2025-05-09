@@ -19,6 +19,8 @@
       <module fileurl="file://$PROJECT_DIR$/bai17/bai17.iml" filepath="$PROJECT_DIR$/bai17/bai17.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai18/bai18.iml" filepath="$PROJECT_DIR$/bai18/bai18.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai19/bai19.iml" filepath="$PROJECT_DIR$/bai19/bai19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai20_hamv_ cachsd/bai20_hamv_ cachsd.iml" filepath="$PROJECT_DIR$/baitaptulam/bai20_hamv_ cachsd/bai20_hamv_ cachsd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai20_try_catch/bai20_try_catch.iml" filepath="$PROJECT_DIR$/baitaptulam/bai20_try_catch/bai20_try_catch.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai21/bai21.iml" filepath="$PROJECT_DIR$/bai21/bai21.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai29_hashmap_2/bai29_hashmap_2.iml" filepath="$PROJECT_DIR$/baitaptulam/bai29_hashmap_2/bai29_hashmap_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai28hashmap/bai29hashmap.iml" filepath="$PROJECT_DIR$/baitaptulam/bai28hashmap/bai29hashmap.iml" />
@@ -27,6 +29,8 @@
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai30.7_kethua/bai30.7_kethua_sinhvien/bai30.7_kethua_sinhvien.iml" filepath="$PROJECT_DIR$/baitaptulam/bai30.7_kethua/bai30.7_kethua_sinhvien/bai30.7_kethua_sinhvien.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai30.9_kethua_interface/bai30.9_kethua_interface.iml" filepath="$PROJECT_DIR$/baitaptulam/bai30.9_kethua_interface/bai30.9_kethua_interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai30_10_dahinh/bai30_10_dahinh.iml" filepath="$PROJECT_DIR$/baitaptulam/bai30_10_dahinh/bai30_10_dahinh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai30_11/bai30_11.iml" filepath="$PROJECT_DIR$/baitaptulam/bai30_11/bai30_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai30_12_enum/bai30_12_enum.iml" filepath="$PROJECT_DIR$/baitaptulam/bai30_12_enum/bai30_12_enum.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai30_oop/bai30_oop.iml" filepath="$PROJECT_DIR$/baitaptulam/bai30_oop/bai30_oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/bai30_oop_bai2/bai30_oop_bai2.iml" filepath="$PROJECT_DIR$/baitaptulam/bai30_oop_bai2/bai30_oop_bai2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai4/bai4.iml" filepath="$PROJECT_DIR$/bai4/bai4.iml" />
@@ -85,6 +89,7 @@
       <module fileurl="file://$PROJECT_DIR$/oop/baitapoop4/baitapoop4.iml" filepath="$PROJECT_DIR$/oop/baitapoop4/baitapoop4.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/baitapsolonthu2-sonhothu2/baitapsolonthu2-sonhothu2.iml" filepath="$PROJECT_DIR$/baitaptulam/baitapsolonthu2-sonhothu2/baitapsolonthu2-sonhothu2.iml" />
       <module fileurl="file://$PROJECT_DIR$/baitaptulam/baitaptulam.iml" filepath="$PROJECT_DIR$/baitaptulam/baitaptulam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/casestudy_modul2/casestudy_modul2.iml" filepath="$PROJECT_DIR$/casestudy_modul2/casestudy_modul2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cleancode/cleancode.iml" filepath="$PROJECT_DIR$/cleancode/cleancode.iml" />
       <module fileurl="file://$PROJECT_DIR$/codegym.iml" filepath="$PROJECT_DIR$/codegym.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai19/dangkydangnhapbai19_regex_hashmap/dangkydangnhapbai19_regex_hashmap.iml" filepath="$PROJECT_DIR$/bai19/dangkydangnhapbai19_regex_hashmap/dangkydangnhapbai19_regex_hashmap.iml" />
@@ -129,6 +134,7 @@
       <module fileurl="file://$PROJECT_DIR$/bai19/thuchanh2bai19/thuchanh2bai19.iml" filepath="$PROJECT_DIR$/bai19/thuchanh2bai19/thuchanh2bai19.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai21/thuchanh2bai21/thuchanh2bai21.iml" filepath="$PROJECT_DIR$/bai21/thuchanh2bai21/thuchanh2bai21.iml" />
       <module fileurl="file://$PROJECT_DIR$/vonglap/thuchanh3/thuchanh3.iml" filepath="$PROJECT_DIR$/vonglap/thuchanh3/thuchanh3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bai11/thuchanh3bai11/thuchanh3bai11.iml" filepath="$PROJECT_DIR$/bai11/thuchanh3bai11/thuchanh3bai11.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai12/thuchanh3bai12/thuchanh3bai12.iml" filepath="$PROJECT_DIR$/bai12/thuchanh3bai12/thuchanh3bai12.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai14/thuchanh3bai14/thuchanh3bai14.iml" filepath="$PROJECT_DIR$/bai14/thuchanh3bai14/thuchanh3bai14.iml" />
       <module fileurl="file://$PROJECT_DIR$/bai15/thuchanh3bai15/thuchanh3bai15.iml" filepath="$PROJECT_DIR$/bai15/thuchanh3bai15/thuchanh3bai15.iml" />
