@@ -1,6 +1,7 @@
 import java.util.regex.*;
+import java.io.Serializable;
 
-public class Account {
+public class Account implements Serializable {
     private String tenDangNhap, matKhau, vaiTro, soTaiKhoan;
 
     public Account(String tenDangNhap, String matKhau, String vaiTro, String soTaiKhoan) {
@@ -13,9 +14,9 @@ public class Account {
     public String getTenDangNhap() {
         return tenDangNhap;
     }
-    public String getMatKhau() {
-        return matKhau;
-    }
+//    public String getMatKhau() {
+//        return matKhau;
+//    }
     public String getVaiTro() {
         return vaiTro;
     }

@@ -1,17 +1,29 @@
 import java.util.*;
+import java.io.*;
 
 public class Main {
     static Scanner sc = new Scanner(System.in);
     static Map<String, Account> danhSachTK = new HashMap<>();
-    static List<Product> sanPhamList = new ArrayList<>();
 
     public static void main(String[] args) {
+        CustomerManager.taiFile();
+        ProductManager.taiFile();
+
+        // Tạo sẵn các tài khoản quản trị
         danhSachTK.put("Admin01", new Account("Admin01", "A123456", "QuanLy", "999111"));
         danhSachTK.put("Admin02", new Account("Admin02", "A123456", "Kho", "999222"));
         danhSachTK.put("Admin03", new Account("Admin03", "A123456", "BanHang", "999333"));
+        // Tạo sẵn 3 sản phẩm
+        List<Product> list = ProductManager.getDanhSachSP();
+        list.clear();
+        list.add(new Product("P001", "Áo thun", 120000, "Áo thun cotton co giãn"));
+        list.add(new Product("P002", "Quần jean", 250000, "Quần jean xanh nam nữ unisex"));
+        list.add(new Product("P003", "Giày sneaker", 450000, "Giày sneaker thể thao, đế cao su"));
+        ProductManager.luuFile();
 
-        sanPhamList.add(new Product("SP01", "Áo thun", 250000, "Cotton 100%"));
-        sanPhamList.add(new Product("SP02", "Quần jeans", 400000, "Denim bền chắc"));
+        for (Account acc : CustomerManager.getdanhSachTK()) {
+            danhSachTK.put(acc.getTenDangNhap(), acc);
+        }
 
         while (true) {
             System.out.println("\n===== MENU HỆ THỐNG =====");
@@ -49,7 +61,10 @@ public class Main {
         }
         System.out.print("Số tài khoản ngân hàng: ");
         String stk = sc.nextLine();
-        danhSachTK.put(ten, new Account(ten, mk, "KhachHang", stk));
+
+        Account kh = new Account(ten, mk, "KhachHang", stk);
+        danhSachTK.put(ten, kh);
+        CustomerManager.capNhatTuMap(danhSachTK);
         System.out.println("Đăng ký thành công.");
     }
 
@@ -88,12 +103,12 @@ public class Main {
 
             switch (chon) {
                 case 1:
-                    for (Product sp : sanPhamList) System.out.println(sp);
+                    for (Product sp : ProductManager.getDanhSachSP()) System.out.println(sp);
                     break;
                 case 2:
                     System.out.print("Từ khóa: ");
                     String kw = sc.nextLine();
-                    for (Product sp : sanPhamList)
+                    for (Product sp : ProductManager.getDanhSachSP())
                         if (sp.getTenSP().toLowerCase().contains(kw.toLowerCase()))
                             System.out.println(sp);
                     break;
@@ -101,7 +116,7 @@ public class Main {
                     System.out.print("Nhập mã sản phẩm: ");
                     String ma = sc.nextLine();
                     boolean found = false;
-                    for (Product sp : sanPhamList) {
+                    for (Product sp : ProductManager.getDanhSachSP()) {
                         if (sp.getMaSP().equalsIgnoreCase(ma)) {
                             gio.them(sp);
                             System.out.println("Đã thêm vào giỏ hàng.");
@@ -121,6 +136,7 @@ public class Main {
                     String mkMoi = sc.nextLine();
                     if (Account.hopLe(kh.getTenDangNhap(), mkMoi)) {
                         kh.setMatKhau(mkMoi);
+                        CustomerManager.capNhatTuMap(danhSachTK);
                         System.out.println("Đổi mật khẩu thành công.");
                     } else {
                         System.out.println("Mật khẩu không hợp lệ!");
@@ -133,14 +149,15 @@ public class Main {
     static void menuQuanLy(Account ql) {
         int chon;
         do {
-            System.out.println("\n--- MENU QUẢN LÝ CỬA HÀNG ---");
-            System.out.println("1. Đổi mật khẩu của chính mình");
-            System.out.println("2. Đổi mật khẩu tài khoản bất kỳ");
-            System.out.println("3. Xem sản phẩm");
-            System.out.println("4. Quản lý sản phẩm (thêm/sửa/xóa)");
+            System.out.println("\n--- MENU QUẢN LÝ ---");
+            System.out.println("1. Đổi mật khẩu đăng nhập");
+            System.out.println("2. Đổi mật khẩu tài khoản khác");
+            System.out.println("3. Quản lý sản phẩm (thêm/sửa/xóa)");
+            System.out.println("4. Quản lý đơn hàng");
             System.out.println("5. Quản lý tài khoản khách hàng");
             System.out.println("6. Quản lý khuyến mãi");
             System.out.println("7. Xem báo cáo doanh thu");
+            System.out.println("8. Xem danh sách sản phẩm");
             System.out.println("0. Thoát");
             System.out.print("Chọn: ");
             chon = nhapSo();
@@ -149,8 +166,13 @@ public class Main {
                 case 1:
                     System.out.print("Mật khẩu mới: ");
                     String mkMoi = sc.nextLine();
-                    ql.setMatKhau(mkMoi);
-                    System.out.println("Đã cập nhật mật khẩu của bạn.");
+                    if (Account.hopLe(ql.getTenDangNhap(), mkMoi)) {
+                        ql.setMatKhau(mkMoi);
+                        CustomerManager.capNhatTuMap(danhSachTK);
+                        System.out.println("Đã cập nhật mật khẩu.");
+                    } else {
+                        System.out.println("Mật khẩu không hợp lệ theo quy tắc.");
+                    }
                     break;
                 case 2:
                     System.out.print("Tên tài khoản cần đổi: ");
@@ -159,81 +181,180 @@ public class Main {
                     if (tk != null) {
                         System.out.print("Mật khẩu mới: ");
                         String newPass = sc.nextLine();
-                        tk.setMatKhau(newPass);
-                        System.out.println("Đổi mật khẩu thành công cho tài khoản: " + ten);
+                        if (Account.hopLe(ten, newPass)) {
+                            tk.setMatKhau(newPass);
+                            CustomerManager.capNhatTuMap(danhSachTK);
+                            System.out.println("Đổi mật khẩu thành công cho tài khoản: " + ten);
+                        } else {
+                            System.out.println("Mật khẩu không hợp lệ theo quy tắc.");
+                        }
                     } else {
-                        System.out.println("Không tồn tại tài khoản.");
+                        System.out.println("Không tìm thấy tài khoản.");
                     }
                     break;
                 case 3:
-                    for (Product sp : sanPhamList) System.out.println(sp);
-                    break;
-                case 4:
                     System.out.println("1. Thêm | 2. Sửa | 3. Xóa");
                     int c = nhapSo();
+                    List<Product> spList = ProductManager.getDanhSachSP();
                     if (c == 1) {
                         System.out.print("Mã: "); String ma = sc.nextLine();
                         System.out.print("Tên: "); String tenSp = sc.nextLine();
                         System.out.print("Giá: "); double gia = Double.parseDouble(sc.nextLine());
                         System.out.print("Mô tả: "); String mota = sc.nextLine();
-                        sanPhamList.add(new Product(ma, tenSp, gia, mota));
+                        spList.add(new Product(ma, tenSp, gia, mota));
+                        ProductManager.luuFile();
+                        System.out.println("Đã thêm sản phẩm.");
                     } else if (c == 2) {
                         System.out.print("Mã cần sửa: "); String ma = sc.nextLine();
-                        for (Product sp : sanPhamList) {
+                        for (Product sp : spList) {
                             if (sp.getMaSP().equals(ma)) {
                                 System.out.print("Tên mới: "); sp.setTenSP(sc.nextLine());
                                 System.out.print("Giá mới: "); sp.setGia(Double.parseDouble(sc.nextLine()));
                                 System.out.print("Mô tả mới: "); sp.setMoTa(sc.nextLine());
                             }
                         }
+                        ProductManager.luuFile();
+                        System.out.println("Đã cập nhật sản phẩm.");
                     } else if (c == 3) {
                         System.out.print("Mã cần xóa: "); String ma = sc.nextLine();
-                        sanPhamList.removeIf(sp -> sp.getMaSP().equals(ma));
+                        spList.removeIf(sp -> sp.getMaSP().equals(ma));
+                        ProductManager.luuFile();
+                        System.out.println("Đã xóa sản phẩm.");
+                    }
+                    break;
+                case 4:
+                    try (Scanner reader = new Scanner(new File("hoadon.txt"))) {
+                        System.out.println("--- DANH SÁCH ĐƠN HÀNG ---");
+                        while (reader.hasNextLine()) {
+                            System.out.println(reader.nextLine());
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Không có đơn hàng nào.");
                     }
                     break;
                 case 5:
-                    System.out.println("Danh sách tài khoản khách hàng:");
-                    for (Account acc : danhSachTK.values())
-                        if (acc.getVaiTro().equals("KhachHang"))
+                    System.out.println("--- DANH SÁCH TÀI KHOẢN KHÁCH HÀNG ---");
+                    for (Account acc : danhSachTK.values()) {
+                        if ("KhachHang".equals(acc.getVaiTro())) {
                             System.out.println("- " + acc.getTenDangNhap());
+                        }
+                    }
                     break;
                 case 6:
-                    System.out.println("(Chức năng khuyến mãi đang giả lập)");
+                    System.out.print("Nhập % giảm giá: ");
+                    double percent = Double.parseDouble(sc.nextLine());
+                    for (Product sp : ProductManager.getDanhSachSP()) {
+                        double newPrice = sp.getGia() * (1 - percent / 100);
+                        sp.setGia(newPrice);
+                    }
+                    ProductManager.luuFile();
+                    System.out.println("Đã cập nhật giá theo khuyến mãi.");
                     break;
                 case 7:
-                    System.out.println("(Chức năng báo cáo doanh thu đang giả lập)");
+                    double total = 0;
+                    try (Scanner reader = new Scanner(new File("hoadon.txt"))) {
+                        while (reader.hasNextLine()) {
+                            String line = reader.nextLine();
+                            if (line.startsWith("Tổng tiền:")) {
+                                String[] parts = line.split(":");
+                                total += Double.parseDouble(parts[1].trim().replace(" VNĐ", ""));
+                            }
+                        }
+                        System.out.println("Tổng doanh thu: " + total + " VNĐ");
+                    } catch (Exception e) {
+                        System.out.println("Không có dữ liệu doanh thu.");
+                    }
+                    break;
+                case 8:
+                    System.out.println("--- DANH SÁCH SẢN PHẨM ---");
+                    for (Product sp : ProductManager.getDanhSachSP()) {
+                        System.out.println(sp);
+                    }
                     break;
             }
         } while (chon != 0);
     }
-
     static void menuNhanVienKho(Account nvk) {
-        System.out.println("\n--- MENU NHÂN VIÊN KHO ---");
-        System.out.println("(1) Cập nhật tồn kho: nhập/xuất ");
-        System.out.println("(2) Theo dõi giao hàng ");
-        System.out.println("(0) Thoát");
-        int chon = nhapSo();
-        if (chon == 1) System.out.println("Cập nhật tồn kho thành công.");
-        else if (chon == 2) System.out.println("Đơn hàng đang trên đường giao.");
-    }
+        int chon;
+        do {
+            System.out.println("\n--- MENU NHÂN VIÊN KHO ---");
+            System.out.println("1. Xem danh sách sản phẩm");
+            System.out.println("2. Kiểm tra tồn kho theo mã sản phẩm");
+            System.out.println("3. Cập nhật mô tả sản phẩm");
+            System.out.println("0. Thoát");
+            System.out.print("Chọn: ");
+            chon = nhapSo();
 
+            switch (chon) {
+                case 1:
+                    for (Product sp : ProductManager.getDanhSachSP()) {
+                        System.out.println(sp);
+                    }
+                    break;
+                case 2:
+                    System.out.print("Nhập mã sản phẩm: ");
+                    String ma = sc.nextLine();
+                    boolean found = false;
+                    for (Product sp : ProductManager.getDanhSachSP()) {
+                        if (sp.getMaSP().equalsIgnoreCase(ma)) {
+                            System.out.println("Tồn kho: " + sp);
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) System.out.println("Không tìm thấy sản phẩm.");
+                    break;
+                case 3:
+                    System.out.print("Nhập mã sản phẩm cần cập nhật mô tả: ");
+                    String maSp = sc.nextLine();
+                    for (Product sp : ProductManager.getDanhSachSP()) {
+                        if (sp.getMaSP().equalsIgnoreCase(maSp)) {
+                            System.out.print("Mô tả mới: ");
+                            sp.setMoTa(sc.nextLine());
+                            ProductManager.luuFile();
+                            System.out.println("Đã cập nhật mô tả.");
+                            break;
+                        }
+                    }
+                    break;
+            }
+        } while (chon != 0);
+    }
     static void menuNhanVienBanHang(Account nvbh) {
-        System.out.println("\n--- MENU NHÂN VIÊN BÁN HÀNG ---");
-        System.out.println("1. Xem sản phẩm");
-        System.out.println("2. Tìm sản phẩm");
-        System.out.println("3. In hóa đơn ");
-        System.out.println("4. Theo dõi đơn hàng (giả lập)");
-        System.out.println("0. Thoát");
-        int chon = nhapSo();
-        if (chon == 1) for (Product sp : sanPhamList) System.out.println(sp);
-        else if (chon == 2) {
-            System.out.print("Nhập từ khóa: ");
-            String kw = sc.nextLine();
-            for (Product sp : sanPhamList)
-                if (sp.getTenSP().toLowerCase().contains(kw.toLowerCase()))
-                    System.out.println(sp);
-        }
-        else if (chon == 3) System.out.println("Đã in hóa đơn .");
-        else if (chon == 4) System.out.println("Đơn hàng đang xử lý...");
+        ShoppingCart gio = new ShoppingCart();
+        int chon;
+        do {
+            System.out.println("\n--- MENU NHÂN VIÊN BÁN HÀNG ---");
+            System.out.println("1. Xem danh sách sản phẩm");
+            System.out.println("2. Thêm sản phẩm vào giỏ cho khách");
+            System.out.println("3. In hóa đơn thanh toán");
+            System.out.println("0. Thoát");
+            System.out.print("Chọn: ");
+            chon = nhapSo();
+
+            switch (chon) {
+                case 1:
+                    for (Product sp : ProductManager.getDanhSachSP()) {
+                        System.out.println(sp);
+                    }
+                    break;
+                case 2:
+                    System.out.print("Nhập mã sản phẩm: ");
+                    String ma = sc.nextLine();
+                    for (Product sp : ProductManager.getDanhSachSP()) {
+                        if (sp.getMaSP().equalsIgnoreCase(ma)) {
+                            gio.them(sp);
+                            System.out.println("Đã thêm vào giỏ.");
+                            break;
+                        }
+                    }
+                    break;
+                case 3:
+                    boolean ok = Payment.xuLyThanhToan();
+                    Invoice.inHoaDon(gio, nvbh.getSoTaiKhoan(), "SHOP123456", ok);
+                    gio = new ShoppingCart(); // reset giỏ hàng
+                    break;
+            }
+        } while (chon != 0);
     }
 }

@@ -1,7 +1,8 @@
 ===== HÓA ĐƠN THANH TOÁN =====
-SP03 - Bikini: 500000.0 VNĐ | Lọt khe
+03 - ao thun nam: 500000.0 VNĐ | size m
+01 - áo thun nam: 500000.0 VNĐ | size xl
 ------------------------------
-Tổng tiền: 500000.0 VNĐ
-Số tài khoản KH: 123456
+Tổng tiền: 1000000.0 VNĐ
+Số tài khoản KH: 123456789
 Số tài khoản shop: SHOP123456
 ==============================
