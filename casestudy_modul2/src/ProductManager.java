@@ -5,10 +5,10 @@ import java.util.List;
 public class ProductManager {
     private static List<Product> danhSachSP = new ArrayList<>();
 
-//    public static void themSanPham(Product sp) {
-//        danhSachSP.add(sp);
-//        luuFile();
-//    }
+    public static void themSanPham(Product sp) {
+        danhSachSP.add(sp);
+        luuFile();
+    }
 
     public static List<Product> getDanhSachSP() {
         return danhSachSP;

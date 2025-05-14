@@ -127,6 +127,10 @@ public class Main {
                     if (!found) System.out.println("Không tìm thấy sản phẩm.");
                     break;
                 case 4:
+                    System.out.println("Giỏ hàng của bạn:");
+                    gio.hienThi(); // ← gọi ở đây
+                    System.out.println("Tổng tiền: " + gio.tinhTongTien() + " VNĐ");
+
                     System.out.println("Tiến hành thanh toán...");
                     boolean ok = Payment.xuLyThanhToan();
                     Invoice.inHoaDon(gio, kh.getSoTaiKhoan(), "SHOP123456", ok);
@@ -350,9 +354,11 @@ public class Main {
                     }
                     break;
                 case 3:
+                    System.out.println("Giỏ hàng hiện tại:");
+                    gio.hienThi(); // ← gọi ở đây
                     boolean ok = Payment.xuLyThanhToan();
                     Invoice.inHoaDon(gio, nvbh.getSoTaiKhoan(), "SHOP123456", ok);
-                    gio = new ShoppingCart(); // reset giỏ hàng
+                    gio = new ShoppingCart();
                     break;
             }
         } while (chon != 0);
